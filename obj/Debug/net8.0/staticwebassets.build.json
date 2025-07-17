@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "jPojeLBgWBAhhZgGNE4mdT8EM2/afO1hOXc4ceAW5uQ=",
+  "Source": "ChessAPI",
+  "BasePath": "_content/ChessAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ChessAPI/wwwroot",
+      "Source": "ChessAPI",
+      "ContentRoot": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/",
+      "BasePath": "_content/ChessAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/index.html",
+      "SourceId": "ChessAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/",
+      "BasePath": "_content/ChessAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/script.js",
+      "SourceId": "ChessAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/",
+      "BasePath": "_content/ChessAPI",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/script.js"
+    },
+    {
+      "Identity": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/style.css",
+      "SourceId": "ChessAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/colinduf/RiderProjects/ChessAPI/ChessAPI/wwwroot/",
+      "BasePath": "_content/ChessAPI",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/style.css"
+    }
+  ]
+}
