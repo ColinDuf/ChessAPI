@@ -2,6 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace OpeningExplorer.Entities;
+/// <summary>
+/// Utilisateur de l'application.
+/// </summary>
 public class User {
     public int Id { get; set; }
     [Required] public string Username { get; set; }

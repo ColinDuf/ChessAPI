@@ -4,12 +4,20 @@ using OpeningExplorer.DTOs;
 using OpeningExplorer.Services;
 
 namespace OpeningExplorer.Controllers;
+/// <summary>
+/// Endpoints d'authentification des utilisateurs.
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase {
     private readonly IAuthService _svc;
     public AuthController(IAuthService svc) { _svc = svc; }
 
+    /// <summary>
+    /// Inscrit un nouvel utilisateur.
+    /// </summary>
+    /// <param name="dto">Informations de création du compte.</param>
+    /// <returns>Identifiant du nouvel utilisateur.</returns>
     [HttpPost("register")]
     [ProducesResponseType(201)]
     public async Task<IActionResult> Register(RegisterDto dto) {
@@ -17,6 +25,10 @@ public class AuthController : ControllerBase {
         return CreatedAtAction(nameof(Register), new { id });
     }
 
+    /// <summary>
+    /// Authentifie un utilisateur et renvoie un jeton JWT.
+    /// </summary>
+    /// <param name="dto">Identifiants de connexion.</param>
     [HttpPost("login")]
     [ProducesResponseType(200)]
     [ProducesResponseType(400)]
