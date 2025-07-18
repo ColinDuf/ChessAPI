@@ -1,6 +1,9 @@
 // Opening.cs
 using System.ComponentModel.DataAnnotations;
 namespace OpeningExplorer.Entities;
+/// <summary>
+/// Entité représentant une ouverture en base de données.
+/// </summary>
 public class Opening {
     public int Id { get; set; }
     [Required] public string ECO { get; set; }

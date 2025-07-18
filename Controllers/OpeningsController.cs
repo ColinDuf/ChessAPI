@@ -6,6 +6,9 @@ using OpeningExplorer.Services;
 
 namespace OpeningExplorer.Controllers
 {
+    /// <summary>
+    /// Gestion des ouvertures d'échecs.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class OpeningsController : ControllerBase
@@ -13,11 +16,18 @@ namespace OpeningExplorer.Controllers
         private readonly IOpeningService _svc;
         public OpeningsController(IOpeningService svc) => _svc = svc;
 
+        /// <summary>
+        /// Retourne toutes les ouvertures.
+        /// </summary>
         [Authorize]
         [HttpGet]
         [ProducesResponseType(200)]
         public async Task<IEnumerable<OpeningDto>> GetAll() => await _svc.GetAll();
 
+        /// <summary>
+        /// Récupère une ouverture spécifique.
+        /// </summary>
+        /// <param name="id">Identifiant de l'ouverture.</param>
         [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(200)]
@@ -35,6 +45,10 @@ namespace OpeningExplorer.Controllers
             }
         }
 
+        /// <summary>
+        /// Crée une nouvelle ouverture.
+        /// </summary>
+        /// <param name="dto">Données de l'ouverture.</param>
         [Authorize]
         [HttpPost]
         [ProducesResponseType(201)]
@@ -44,6 +58,11 @@ namespace OpeningExplorer.Controllers
             return CreatedAtAction(nameof(Get), new { id }, null);
         }
 
+        /// <summary>
+        /// Met à jour une ouverture existante.
+        /// </summary>
+        /// <param name="id">Identifiant de l'ouverture.</param>
+        /// <param name="dto">Nouvelles données de l'ouverture.</param>
         [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(204)]
@@ -61,6 +80,10 @@ namespace OpeningExplorer.Controllers
             }
         }
 
+        /// <summary>
+        /// Supprime une ouverture.
+        /// </summary>
+        /// <param name="id">Identifiant de l'ouverture.</param>
         [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(204)]
